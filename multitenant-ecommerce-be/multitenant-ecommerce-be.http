@@ -1,0 +1,24 @@
+@multitenant_ecommerce_be_HostAddress = http://localhost:5071
+
+###
+GET {{multitenant_ecommerce_be_HostAddress}}/api/category/
+Accept: application/json
+
+###
+GET {{multitenant_ecommerce_be_HostAddress}}/api/category/1
+Accept: application/json
+
+###
+POST {{multitenant_ecommerce_be_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+###
+GET {{multitenant_ecommerce_be_HostAddress}}/api/vendor/product/
+Accept: application/json
+
+###
+GET {{multitenant_ecommerce_be_HostAddress}}/api/public/product/
+Accept: application/json
+###
+GET {{multitenant_ecommerce_be_HostAddress}}/api/public/product/slug?categorySlug=books&subcategorySlug=fiction
+Accept: application/json
