@@ -361,3 +361,34 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# -----------------------
+# Sensitive config files
+# -----------------------
+
+# ASP.NET Core configuration files
+appsettings.json
+appsettings.*.json
+
+# User secrets folder (ASP.NET Core)
+secrets.json
+**/secrets/**
+
+# Environment files
+.env
+.env.*
+
+# Certificates and private keys
+*.key
+*.pem
+*.cer
+*.crt
+*.p12
+
+# Database or connection configs
+*.sqlite
+*.db
+
+# Publish profiles (nếu chưa chặn ở trên)
+*.pubxml
+*.publishsettings
